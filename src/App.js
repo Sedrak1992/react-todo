@@ -11,6 +11,7 @@ function App() {
            <input type="text" placeholder="new todo...." />
            <button type="button">add</button>
         </div>
+        <h2>lorem20 </h2>
         <List items={todos} />
     </div>
   );
