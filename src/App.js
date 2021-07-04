@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import List from "./List";
+
+const todos = ["Todo 01","Todo 02","Todo 03","Todo 04","Todo 05","Todo 06"];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React todo</h1>
+        <div className="todo_input">
+           <input type="text" placeholder="new todo...." />
+           <button type="button">add</button>
+        </div>
+        <List items={todos} />
     </div>
   );
 }
-
 export default App;

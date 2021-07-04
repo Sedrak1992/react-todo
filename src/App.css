@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.todo_input{
+  display: flex;
+  justify-content: center;
+}
+.todo_input > button {
+  margin-left: 20px;
+}
