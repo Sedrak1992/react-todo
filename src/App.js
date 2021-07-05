@@ -12,6 +12,7 @@ function App() {
            <button type="button">add</button>
         </div>
         <h2>lorem20 </h2>
+        <h2>lorem20 </h2>
         <List items={todos} />
     </div>
   );
