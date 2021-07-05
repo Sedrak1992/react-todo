@@ -1,8 +1,11 @@
-const List = (props) =>{
-  return(
-      <ul>
-         {props.items.map(todo =>(<li>{todo}</li>))}
-      </ul>
+const List = ({ items }) => {
+  return (
+    <ul>
+      {items.map((todo, i) => (
+        <li key={i}>{todo}</li>
+      ))}
+    </ul>
   );
- };
- export default List
+};
+
+export default List;
