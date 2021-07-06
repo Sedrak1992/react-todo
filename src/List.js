@@ -1,10 +1,12 @@
-const List = ({ items }) => {
+import './list.css';
+
+const List = ({items,del}) => {
   return (
-    <ul>
+    <>
       {items.map((todo, i) => (
-        <li key={i}>{todo}</li>
+        <div key={i} id="todos">{todo} <button type="button" onClick={() => del(i)}>X</button></div>
       ))}
-    </ul>
+    </>
   );
 };
 
