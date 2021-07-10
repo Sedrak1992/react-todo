@@ -1,14 +1,9 @@
-import {useRef,useState} from "react";
+import { useRef, useState } from "react";
 import List from "./List";
-import './App.css';
- 
+import "./App.css";
+
 function App() {
- 
-  return (
-    <div className="App">
-      
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
