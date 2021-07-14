@@ -36,7 +36,6 @@
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -51,4 +50,14 @@
 }
 .todo_input > button {
   margin-left: 20px;
+}
+.RecipeReviewCard{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+.MuiCard-root{
+  background: darkcyan !important;
+  color: #fff !important;
 }

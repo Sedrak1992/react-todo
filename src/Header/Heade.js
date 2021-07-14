@@ -80,7 +80,8 @@
     },
   }));
   
-  export default function Heade() {
+  export default function Heade(props) {
+  const {count} = props;
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -173,6 +174,9 @@
               aria-label="open drawer"
             >
               <MenuIcon />
+              
+   
+              <strong>{props.stateCount}</strong>
             </IconButton>
             <Typography className={classes.title} variant="h6" noWrap>
               Material-UI
