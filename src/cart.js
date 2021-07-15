@@ -16,6 +16,7 @@ import ShareIcon from "@material-ui/icons/Share";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import Button from "@material-ui/core/Button";
+import SwipeableTemporaryDrawer from "./temporary drawer/Temporary_drawer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function RecipeReviewCard(props) {
-  const {foto,AddProduct } = props;
+  const { foto, AddProduct,toggleDrawer } = props;
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -62,15 +63,10 @@ export default function RecipeReviewCard(props) {
             <MoreVertIcon />
           </IconButton>
         }
-        
         title="Shrimp and Chorizo Paella"
         subheader="September 14, 2016"
       />
-      <CardMedia
-        className={classes.media}
-        image={foto}
-        title="Paella dish"
-      />
+      <CardMedia className={classes.media} image={foto} title="Paella dish" />
 
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
@@ -94,17 +90,26 @@ export default function RecipeReviewCard(props) {
           aria-label="show more"
         >
           <ExpandMoreIcon />
-        </IconButton>{/* <button >Add Card11111</button> */}
+        </IconButton>
+        {/* <button >Add Card11111</button> */}
 
         <Button
-            variant="contained"
-            color="primary"
-            className={classes.margin}
-             onClick={props.addProduct}
-          >
-            Theme Provider
-          </Button>
+          variant="contained"
+          color="primary"
+          className={classes.margin}
+          onClick={props.addProduct}
+        >
+          Provider
+        </Button>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={toggleDrawer(true)}
+        >
+          add
+        </Button>
       </CardActions>
+
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>Method:</Typography>

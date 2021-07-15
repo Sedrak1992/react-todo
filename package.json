@@ -1,5 +1,4 @@
-{
-  "name": "react-todo",
+{  "name": "react-todo",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://Sedrak1992.github.io/react-todo",
@@ -21,7 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"f
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
