@@ -158,7 +158,6 @@ export default function Heade(props) {
         >
           <AccountCircle />
         </IconButton>
-        <p>Profile</p>
       </MenuItem>
     </Menu>
   );

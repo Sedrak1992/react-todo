@@ -12,7 +12,6 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   list: {
     width: 350,
-    zIndex:-1,
   },
   fullList: {
     width: "auto",
@@ -71,7 +70,9 @@ function App() {
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}
         >
-          <h1>tfyguhtuy</h1>
+          
+       
+
         </div>
       </SwipeableDrawer>
     </div>
